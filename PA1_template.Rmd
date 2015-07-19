@@ -31,13 +31,13 @@ hist(day_total_steps, main = "Histogram of steps by day", col = "sky blue",
 ```
 
 We can now calculate the median (`r median(day_total_steps)`) and mean 
-(`r mean(day_total_steps,digits = 4)`) of the total steps taken by day.
+(`r mean(day_total_steps,digits = 8)`) of the total steps taken by day.
 
 ```{r, echo=TRUE}
 summary(day_total_steps,digits = 8)
 ```
 
-For the second question, we are interested know in the daily activity pattern.
+For the second question, we are interested in knowing the daily activity pattern.
 We can take a look at it using the line  plot below.
 
 ```{r}
@@ -47,7 +47,7 @@ plot(names(five_min_int), five_min_int, type="l", xlab = "5 min interval",
      lwd = 2.5, col = "sky blue")
 ```
 
-We can see from the chart and the calculation below that the interval with the most activity is the one that starts at 8:35 a.m., when 104 steps are taken of average.
+We can see from the chart and the calculation below that the interval with the most activity is the one that starts at 8:35 a.m., when 104 steps are taken on average.
 
 ```{r}
 which.max(five_min_int)
