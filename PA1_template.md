@@ -48,7 +48,7 @@ summary(day_total_steps,digits = 8)
 ##    41.00  8841.00 10765.00 10766.19 13294.00 21194.00
 ```
 
-For the second question, we are interested know in the daily activity pattern.
+For the second question, we are interested in knowing the daily activity pattern.
 We can take a look at it using the line  plot below.
 
 
@@ -61,7 +61,7 @@ plot(names(five_min_int), five_min_int, type="l", xlab = "5 min interval",
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
-We can see from the chart and the calculation below that the interval with the most activity is the one that starts at 8:35 a.m., when 104 steps are taken of average.
+We can see from the chart and the calculation below that the interval with the most activity is the one that starts at 8:35 a.m., when 104 steps are taken on average.
 
 
 ```r
